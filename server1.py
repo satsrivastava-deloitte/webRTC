@@ -6,6 +6,7 @@ ROOM = '1234'
 sio = socketio.AsyncServer(cors_allowed_origins='*', ping_timeout=35)
 app = web.Application()
 sio.attach(app)
+
 socketToRoom={}
 
 
